@@ -143,6 +143,9 @@
       const span = document.createElement("span");
       span.textContent = text;
       span.style.flex = "1";
+      span.style.wordBreak = "keep-all";
+      span.style.whiteSpace = "normal";
+
       span.onclick = () => {
         li.classList.toggle("done");
         saveTasks();
